@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <h1>Rock, Paper, Scissors Game</h1>
+    <main>
+        <div class="scoreboard">
+            <strong>Player: <span class="score" id="player-count">0</span></strong>
+            <strong>Computer: <span class="score" id="computer-count">0</span></strong>
+        </div>
+
+        <section class="choice-container">
+            <h2>Select Your Move:</h2>
+            <div class="button-wrapper">
+                <button id="rock-option" class="game-button">Rock</button>
+                <button id="paper-option" class="game-button">Paper</button>
+                <button id="scissors-option" class="game-button">Scissors</button>
+            </div>
+        </section>
+
+        <div class="output-container">
+            <p id="round-result-message"></p>
+            <p id="final-result-message"></p>
+            <button class="game-button" id="replay-button">Play Again</button>
+        </div>
+
+        <button id="rules-button" class="game-button">Game Rules</button>
+
+        <!-- Modal for Rules -->
+        <div id="rules-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Game Rules</h2>
+                <p>In this game, you play against the computer. Choose Rock, Paper, or Scissors.</p>
+                <ul>
+                    <li>Rock beats Scissors</li>
+                    <li>Scissors beats Paper</li>
+                    <li>Paper beats Rock</li>
+                </ul>
+                <p>If both you and the computer choose the same option, no one scores a point.</p>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
